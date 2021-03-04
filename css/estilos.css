@@ -1,0 +1,579 @@
+/* VARIABLES */
+:root{
+    --principal: #AB7E3B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+/* ESTILOS GENERALES */
+a{
+    text-decoration: none;
+}
+.contenedor{
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px;
+    margin-top: 30px;
+}
+.encabezado{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+span{
+    color: var(--principal);
+}
+.iconoArbol{
+    text-align: center;
+    margin-top: 8px;
+}
+.iconoArbol img{
+    width: 25px;
+    height: 25px;
+}
+.boton{
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+    background-color: var(--principal);
+    height: 38px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    transition: .5 all;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.boton:hover{
+    border: 1px solid var(--principal);
+    color: var(--principal);
+    background-color: transparent;
+}
+/* ESITLOS MENU */
+header{
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    background-color: #fff;
+    z-index: 100;
+}
+.logo{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+.phone{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+.phone p{
+    font-size: 20px;
+}
+.phone i{
+    margin-right: 8px;
+}
+.menu{
+    text-align: center;
+}
+.menu a{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 15px;
+    color: #000;
+    font-weight: 400;
+}
+.menu a:hover{
+    border-bottom: 1px solid var(--principal);
+}
+/* ESTILOS BANNER */
+.banner{
+    width: 100%;
+    height: 88vh;
+    margin-top: 100px;
+    position: relative;
+    background-image: url('../img/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-color: rgba(0,0,0,.4);
+    background-attachment: fixed;
+}
+.banner .textoBanner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.banner .textoBanner h2{
+    font-size: 55px;
+    font-weight: 400;
+}
+.banner .textoBanner h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+.banner .textoBanner a{
+    margin-top: 35px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 9px;
+    color: #fff;
+    font-size: 17px;
+    transition: .4s all;
+}
+.banner .textoBanner a:hover{
+    border: 1px solid var(--principal);
+    background-color: var(--principal);
+    
+}
+/* ESTILOS BOTON DE WHATSAPP */
+.whatsapp{
+	position: fixed;
+	bottom: 35px;
+	width: 60px;
+	height: 60px;
+	right: 20px;
+	transition: .5s all;
+	z-index: 100
+}
+.whatsapp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	box-shadow: none;
+	transform: rotateX('100%');
+}
+.whatsapp:hover{
+	width: 70px;
+	height: 70px;
+}
+/* ESTILOS SECCION SERVICIOS */
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tarjeta{
+    width: 28%;
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #989292;
+    text-align: center;
+    color: #4e4e4e;
+    transition: .4s all;
+}
+.tarjeta p i{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.tarjeta h3{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    transition: .4s all;
+}
+.tarjeta p{
+    font-size: 15px;
+    transition: .4s all;
+}
+.tarjeta:hover{
+    background-color: var(--principal);
+    border: 1px solid var(--principal);
+}
+.tarjeta:hover p{
+    color: #fff;
+}
+.tarjeta:hover h3{
+    color: #fff;
+}
+/* ESTILOS SECCION NOSOTROS */
+.contenedorNosotros{
+    background-color: #e5e5e5;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.textoNosotros{
+    width: 50%;
+    padding: 30px 20px;
+}
+.textoNosotros p{
+    margin-top: 20px;
+    line-height: 20px;
+    font-size: 19px;
+}
+.imgNosotros{
+    width: 48%;
+}
+.imgNosotros img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.contenedorNosotros .boton{
+    margin-top: -100px;
+    margin-left:30px ;
+}
+/* ESTILOS SECCION GALERIA */
+.imagenes{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imagen{
+    width: 30%;
+    height: 350px;
+    margin: 15px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.6);
+    cursor: pointer;
+    overflow: hidden;
+}
+.imagen:hover  img{
+    width: 104%;
+    height: 104%;
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s all;
+}
+/* ESTILOS SECCION CONTACTO */
+.form{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 15px;
+    display: block;
+    padding: 10px 10px 10px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #414141
+}
+input:focus{
+    outline: none;
+    color: #fff;
+}
+label{
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 15px;
+    color: var(--principal);
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: var(--principal);
+    left: 0;
+    transition: 0.3s ease width;
+
+}
+input:focus~.barra::before{
+    width: 100%;
+}
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+textarea:focus{
+    outline: none;
+    border: 2px solid var(--principal);
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+textarea:focus .mensaje,textarea:valid~label{
+    top: -10px;
+    font-style: 10px;
+}
+button{
+    display: block;
+    margin: 10px auto;
+    width: 40%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    background-color: var(--principal);
+    cursor: pointer;
+    font-size: 17px;
+    transition: .4s all;
+}
+button:hover{
+    border: 1px solid var(--principal);
+    color: var(--principal);
+    background-color: transparent;
+}
+/* ESTILOS MAPA */
+#mapa{
+    margin-top: 40px;
+}
+.mapa{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+.mapa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ESTILOS FOOTER */
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #242424;
+    padding: 40px;
+}
+.contenidoFooter{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.contenidoFooter p{
+    margin-top: 5px;
+    color: #fff;
+}
+.contenidoFooter i {
+    margin-right: 8px;
+}
+.copy{
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #414141;
+    text-align: center;
+}
+.copy p{
+    color: #fff;
+    padding-top: 10px;
+}
+/* ANIMACION A TEXTOS E IMAGENES */
+.animado{
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.mostrarArriba{
+	animation: mostrarArrriba 0.7s;
+}
+@keyframes mostrarArrriba{
+	0%{
+		transform: translateY(60px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+/* ESTILOS RESPONSIVE */
+@media (max-width: 950px){
+    .textoNosotros{
+        width: 40%;
+        margin: auto;
+    }
+}
+@media (max-width: 770px){
+    /* ESTILOS MENU  */
+    header{
+        height: 80px;
+    }
+    .logo{
+        text-align: start;
+    }
+    .menu{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--fondo);
+        transform: translateX(100%);
+        transition: .5s all;
+        background-color: #fff;
+    }
+    .menu a{
+        font-size: 28px;
+        width: 200px;
+        height: 40px;
+        margin-top: 13px;
+    }
+    .menuMostrar{
+        transform: translateX(0);
+    }
+    .botonMenu{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-image: url('../img/menu.png');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        transition: .4s all;
+        cursor: pointer;
+        filter: invert(1);
+    }
+    .cerrar{
+        background-image: url('../img/close.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+        cursor: pointer;
+        z-index: 100;
+        filter: invert(1);
+    }
+    .phone{
+        display: none;
+    }
+    .banner{
+        margin-top: 60px;
+    }
+    .banner .textoBanner h2{
+        font-size: 40px;
+    }
+    .banner .textoBanner h3 {
+        font-size: 18px;
+    }
+    .banner .textoBanner a {
+        width: 130px;
+        height: 34px;
+        padding: 6px;
+    }
+    .tarjeta{
+        width: 40%;
+    }
+    .textoNosotros{
+        width: 100%;
+    }
+    .textoNosotros p{
+        font-size: 16px;
+    }
+    .imgNosotros{
+        width: 95%;
+        margin: auto;
+    }
+    .contenedorNosotros .boton{
+        margin: 30px auto;
+    }
+    .imagen{
+        width: 70%;
+    }
+    .form{
+        width: 90%;
+    }
+    .contenidoFooter{
+        font-size: 15px;
+    }
+    .copy{
+        font-size: 13px;
+    }
+}
+@media (max-width: 550px){
+    .logo{
+        width: 150px;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    .menu a{
+        font-size: 20px;
+    }
+    .whatsapp{
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp:hover{
+        width: 55px;
+        height: 55px;
+    }
+    .whatsapp img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner .textoBanner h2 {
+        font-size: 31px;
+    }
+    .banner .textoBanner h3 {
+        font-size: 15px;
+    }
+    .banner .textoBanner h3 {
+        font-size: 15px;
+    }
+    .tarjeta{
+        width: 90%;
+    }
+    .imagen{
+        width: 90%;
+    }
+    .footer{
+        height: 280px;
+    }
+    .contenidoFooter{
+        font-size: 13px;
+    }
+    .contenidoFooter p{
+        margin-top: 13px;
+    }
+    .copy{
+        font-size: 10px;
+    }
+
+}
